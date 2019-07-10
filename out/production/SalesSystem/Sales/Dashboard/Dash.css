@@ -1,0 +1,34 @@
+.root{
+
+	-fx-background-color: #f0f8ff;
+}
+
+.anchorpane{
+
+-fx-background-color: #f0f8ff;
+
+}
+.internalpane{
+
+-fx-background-color: white;
+-fx-border-radius:3;
+-fx-background-radius:3;
+}
+.toppane{
+
+-fx-background-color: white;
+
+}
+
+.userimage{
+
+-fx-background-radius: 20px;
+-fx-background-color: grey;
+
+}
+.datepicker{
+
+	-fx-background-color: white;
+	-fx-background-radius: 20px;
+	-fx-border-width: 10px;
+}

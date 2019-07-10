@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="528.0" prefWidth="762.0" stylesheets="@Dash.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="41.0" prefHeight="43.0" prefWidth="722.0" styleClass="toppane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="348.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="159.0" promptText="Search" />
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" styleClass="userimage">
+                           <image>
+                              <Image url="@../Images/icons8_search_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="27.0" prefWidth="123.0" styleClass="userimage" text="Steve Davis" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="userimage">
+                           <image>
+                              <Image url="@../Images/icons8_user_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="9.0" layoutY="9.0" prefHeight="528.0" prefWidth="59.0" spacing="10.0" styleClass="anchorpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXDrawer prefHeight="65.0" prefWidth="59.0">
+               <children>
+                  <JFXHamburger prefHeight="51.0" prefWidth="59.0" />
+               </children>
+            </JFXDrawer>
+            <Separator prefWidth="200.0" />
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_speed_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="18.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_statistics_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="18.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_pie_chart_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="18.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_sell_stock_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="18.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_important_mail_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="18.0" layoutY="368.0" onMouseClicked="#AddItemAct" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_horizontal_settings_mixer_96px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <VBox layoutX="77.0" layoutY="230.0" prefHeight="322.0" prefWidth="666.0" spacing="10.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="19.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="646.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RECENT SALES">
+                     <font>
+                        <Font name="Candara" size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="528.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXDatePicker editable="false" promptText="March - Date" styleClass="datepicker">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                           </padding>
+                        </JFXDatePicker>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </HBox>
+            <TableView prefHeight="320.0" prefWidth="646.0">
+              <columns>
+                <TableColumn prefWidth="142.0" text="Item Name" />
+                <TableColumn minWidth="8.0" prefWidth="167.0" text="Quantity" />
+                  <TableColumn minWidth="8.0" prefWidth="167.0" text="Price/Quantity" />
+                  <TableColumn minWidth="8.0" prefWidth="167.0" text="Total Price" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Pane layoutX="75.0" layoutY="59.0" prefHeight="86.0" prefWidth="200.0" styleClass="internalpane">
+         <children>
+            <Text layoutX="20.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY'S SALES">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="142.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,647">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="33.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_bar_chart_52px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="310.0" layoutY="59.0" prefHeight="86.0" prefWidth="200.0" styleClass="internalpane">
+         <children>
+            <Text layoutX="20.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECENT SALES">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="142.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="621">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="33.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_bar_chart_52px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="543.0" layoutY="59.0" prefHeight="86.0" prefWidth="200.0" styleClass="internalpane">
+         <children>
+            <Text layoutX="20.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL SALES">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="132.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25,541">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="33.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_bar_chart_52px_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

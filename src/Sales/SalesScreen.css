@@ -1,0 +1,96 @@
+.root{
+
+-fx-background-color: #f0f8ff;
+
+
+}
+
+.anchorpane{
+
+-fx-background-color: #f0f8ff;
+
+
+}
+
+
+.toppane{
+
+-fx-background-color: white;
+
+}
+
+.internalpane{
+
+-fx-background-color: white;
+-fx-border-radius:3;
+-fx-background-radius:3;
+}
+.menubtn{
+
+	-fx-background-color: transparent;
+
+}
+.cancelsalebtn{
+
+	-fx-background-color: red;
+	-fx-background-radius:3;
+
+
+}
+
+.PAUSESALE{
+
+	-fx-background-color: yellow;
+	-fx-background-radius:3;
+	
+}
+
+.sidepanebuttons{
+
+-fx-background-color: #0C0C10;
+	-fx-background-radius: 0;
+
+
+}
+
+.selectedscreenbtn{
+
+-fx-background-color: red;
+
+}
+
+.checkout{
+
+	-fx-background-color: lightgreen;
+	-fx-border-width: 0px0px2px0px;
+	-fx-border-color: green;
+	
+}
+
+.searchpane{
+
+	-fx-border-width: 1,1,1,1;
+	-fx-border-color: lightgrey;
+	-fx-border-radius: 3;
+	-fx-background-color: white;
+
+}
+.searchboxbtn{
+
+	-fx-background-color:#f0f8ff;
+	-fx-border-radius: 10;
+
+}
+.searchbox{
+
+-fx-background-color: transparent;
+-fx-border-color: transparent;	
+}
+
+.table{
+
+	-fx-font-family: fantasy;
+	-fx-font-weight: 100;
+	-fx-font-size: 16;
+	-fx-cell-size: 16;
+}

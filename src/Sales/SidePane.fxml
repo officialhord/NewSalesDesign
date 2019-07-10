@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="197.0" spacing="10.0" styleClass="root" stylesheets="@SalesScreen.css" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXDrawer prefHeight="56.0" prefWidth="197.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="72.0" prefWidth="197.0">
+               <children>
+                  <JFXHamburger alignment="CENTER" prefHeight="51.0" prefWidth="59.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </JFXDrawer>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_speed_96px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_statistics_96px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reports | Analysis">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_pie_chart_96px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock | Inventory">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_sell_stock_96px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sales">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_important_mail_96px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8_horizontal_settings_mixer_96px_1.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>
